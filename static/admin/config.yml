@@ -20,6 +20,9 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Address", name: "address", widget: "string"}
+      - {label: "Phone", name: "phone", widget: "string"}
+      - {label: "WebSite", name: "website", widget: "string"}
 
   - name: "pages"
     label: "Pages"

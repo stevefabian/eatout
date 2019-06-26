@@ -11,6 +11,9 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   tags,
+  address,
+  phone,
+  website,
   title,
   helmet,
 }) => {
@@ -25,7 +28,10 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
+            <div><b>address </b>{address}</div>
+            <div><b>phone </b>{phone}</div>
+            <div><b>web </b><a href={`${website}`}>{website}</a></div>
+            <div style={{marginTop: '13px', marginBottom: '13px', fontWeight: '700'}}>{description}</div>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -51,6 +57,9 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  address: PropTypes.string,
+  phone: PropTypes.string,
+  website: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -74,6 +83,9 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        address={post.frontmatter.address}
+        phone={post.frontmatter.phone}
+        website={post.frontmatter.website}
       />
     </Layout>
   )
@@ -97,6 +109,9 @@ export const pageQuery = graphql`
         title
         description
         tags
+        address
+        phone
+        website
       }
     }
   }

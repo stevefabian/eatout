@@ -16,7 +16,7 @@ class BlogRoll extends React.Component {
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                  }`}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
@@ -26,32 +26,26 @@ class BlogRoll extends React.Component {
                           image: post.frontmatter.featuredimage,
                           alt: `featured image thumbnail for post ${
                             post.title
-                          }`,
+                            }`,
                         }}
                       />
                     </div>
                   ) : null}
                   <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
+                    <div><Link
+                      className="title has-text-primary is-size-5"
                       to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
+                    >{post.frontmatter.title}</Link>
+                    </div>
+                    {post.frontmatter.description}
+                    <br />
+                    <br />
+                    <Link className="button" to={post.fields.slug}>
+                      More Info →
+                  </Link>
                   </p>
                 </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
+
               </article>
             </div>
           ))}
@@ -87,6 +81,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                description
                 featuredpost
                 featuredimage {
                   childImageSharp {
