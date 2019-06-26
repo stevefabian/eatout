@@ -1,7 +1,7 @@
 ---
 templateKey: 'gallery-page'
 path: /gallery
-title: Art Gallery
+title: Restaurants
 image: /img/jumbotron.jpg
 heading: unused
 description: >-
