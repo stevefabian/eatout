@@ -8,8 +8,20 @@ featuredimage: /img/flavor_wheel.jpg
 tags:
   - flavor
   - tasting
-address: Lake Mohawk Plaza, Sparta, NJ
+address: 'Lake Mohawk Plaza, Sparta, NJ'
 phone: 973-000-0000
-website: http://kroghs.com
+website: 'http://kroghs.com'
 ---
-**wine** Hanwood Chardonnay
+**staff**\
+Mike - good pours, building house\
+Molly - \
+Cassidy - new blonde
+
+
+
+**wine**\
+Hanwood Chardonnay
+
+**food**\
+Fabian Wings\
+Nachos
