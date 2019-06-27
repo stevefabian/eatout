@@ -6,8 +6,8 @@ description: Local Brew Pub in Sparta on Lake Mohawk. Great Wings and Nachos
 featuredpost: true
 featuredimage: /img/flavor_wheel.jpg
 tags:
-  - flavor
-  - tasting
+  - local
+  - wings
 address: 'Lake Mohawk Plaza, Sparta, NJ'
 phone: 973-000-0000
 website: 'http://kroghs.com'
